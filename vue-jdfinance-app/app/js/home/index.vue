@@ -1,46 +1,33 @@
-<template lang="html">
-    <div>
-        <Heador/>
-        <Slider/>
-        <Novice/>
-        <Borrow/>
-        <Money/>
-        <Product/>
-        <Life/>
-        <Footor/>
-        <Navbar/>
-    </div>
+<!-- 首页 -->
+<template>
+  <div>
+    <Header></Header>
+  </div>
 </template>
 
 <script>
-import Heador from '../public/header.vue';
-import Footor from '../public/footer.vue';
-import Navbar from '../public/navbar.vue';
-import Slider from './hslider.vue';
-import Novice from './novice.vue';
-import Borrow from './borrow.vue';
-import Money from './money.vue';
-import Product from './product';
-import Life from './life';
+import Header from '../public/header'
 export default {
-  components:{
-    Heador,
-    Slider,
-    Novice,
-    Borrow,
-    Money,
-    Product,
-    Life,
-    Footor,
-    Navbar
+  components: {
+    Header
+  },
+  data () {
+    return {
+      
+    }
+  },
+  methods: {
+    
+  },
+  created () {
+    
+  },
+  mounted () {
+    
   }
 }
 </script>
 
-<style lang="scss">
-  @import '../../css/reset.scss';
-  .home{
-    color: red;
-    font-size: 80px;
-  }
+<style scoped>
+
 </style>

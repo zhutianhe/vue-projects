@@ -1,3 +1,4 @@
+<!-- 入口 -->
 <template>
   <div id="app">
     <router-view/>
@@ -9,3 +10,4 @@ export default {
   name: 'app'
 }
 </script>
+

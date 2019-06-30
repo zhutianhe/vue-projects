@@ -1,3 +1,4 @@
+<!-- header组件 -->
 <template>
   <div :class="$style.header">
     <span :class="$style.left">
@@ -10,12 +11,10 @@
 <script>
 import btn from "../core/btn.vue";
 export default {
- 
   components: {
     btn
-  },
-  
-};
+  }
+}
 </script>
 
 <style lang="scss" module>
@@ -30,12 +29,12 @@ export default {
   font-size: 32px;
   background: #fff url("//m.jr.jd.com/spe/qyy/main/images/jr-logo.png") no-repeat center center;
   background-size: auto 50%;
-  z-index: 100;
+  z-index:  100;
   .left {
     font-size: 28px;
     height: 30px;
     line-height: 30px;
-    margin: 17px 0 0 18px;
+    margin: 170x 0 0 18px;
   }
   .btnDownload {
     float: right;
