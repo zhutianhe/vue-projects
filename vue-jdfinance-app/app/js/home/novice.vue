@@ -1,3 +1,4 @@
+<!-- 新手特权 -->
 <template>
   <Panel title="新手特权" :class="$style.panel">
     <section :class="$style.content">

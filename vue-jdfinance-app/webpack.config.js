@@ -20,11 +20,13 @@ module.exports = env => {
           NODE_ENV: '"production"'
         }
       }),
-      new ExtractTextPlugin("style.css", {ignoreOrder: true})
+      // new ExtractTextPlugin("style.css", {ignoreOrder: true})
     )
   }
   return {
-    entry: ['./app/js/viewport.js', './app/js/main.js'],
+    entry: {
+      app: './app/js/main.js'
+    },
     
     devServer: {
       contentBase: './dist',

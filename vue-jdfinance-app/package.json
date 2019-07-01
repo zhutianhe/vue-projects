@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --watch",
-    "start": "webpack-dev-server --open",
+    "start": "webpack-dev-server --host 0.0.0.0 --inline",
     "build": "webpack --env.production"
   },
   "repository": {
@@ -53,14 +53,13 @@
       "node/no-unpublished-import": "error",
       "vue/html-indent": [
         "error",
-        4
+        2
       ],
       "vue/max-attributes-per-line": "off"
     }
   },
   "eslintIgnore": [
-    "node_modules",
-    "webpack.config.js"
+    "node_modules"
   ],
   "homepage": "https://gitlab.com/imooc/vuejs#README",
   "dependencies": {

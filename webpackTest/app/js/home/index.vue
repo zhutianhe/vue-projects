@@ -12,19 +12,14 @@ export default {
     return {
       
     }
-  },
-  methods: {
-    
-  },
-  created () {
-    
-  },
-  mounted () {
-    
   }
 }
 </script>
 
-<style scoped>
+<style lang="scss">
+h1 {
+  color: red;
+  font-size: 40px;
+}
 
 </style>

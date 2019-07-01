@@ -1,3 +1,4 @@
+<!-- 首页轮播 -->
 <template>
   <article class="">
     <Slider :items="items" :cname="$style.slider"/>
@@ -13,12 +14,12 @@
 </template>
 
 <script>
-import Slider from '../core/slider.vue';
+import Slider from "../core/slider";
 export default {
   components: {
     Slider,
   },
-  data(){
+  data () {
     return {
       items: [{
         href: 'home',
@@ -60,37 +61,35 @@ export default {
 </script>
 
 <style lang="scss" module>
-  @import "../../css/element.scss";
-  .slider {
-    margin-top: 120px;
-    img{
-      width: 100%;
+@import "../../css/element.scss";
+.slider {
+  margin-top: 120px;
+  img {
+    width: 100%;
+  }
+}
+.list {
+  @include list(row);
+  background: #fff;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  justify-content: space-around;
+  a {
+    text-decoration: none;
+  }
+  .item {
+    text-align: center;
+    img {
+      display: inline-block;
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+    }
+    h4 {
+      font-size: 26px;
+      margin-top: 12px;
+      color: #666;
     }
   }
-  .list {
-    @include list(row);
-    background: #fff;
-    padding-top: 40px;
-    padding-bottom: 20px;
-    justify-content: space-around;
-    a{
-      text-decoration: none;
-    }
-    .item {
-      text-align: center;
-      img{
-        display: inline-block;
-        width: 90px;
-        height: 90px;
-        border-radius: 50%;
-      }
-      h4{
-        font-size: 26px;
-        margin-top: 12px;
-        color: #666;
-      }
-    }
-
-  }
-  
+}
 </style>

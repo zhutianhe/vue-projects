@@ -1,32 +1,27 @@
-<!-- slider组件 -->
 <template>
   <section :class="cname">
-    <swiper :options="options" :notNextTick="options.notNextTick">
-      <swiper-silde v-for="item in items" :key="item.href">
+    <swiper :options="options" :not-next-tick="options.notNextTick">
+      <swiper-slide v-for="item in items" :key="item.href">
         <router-link :to="{name: item.href}">
           <img :src="item.src" alt="">
         </router-link>
-      </swiper-silde>
+      </swiper-slide>
       <div class="swiper-pagination" v-if="options.pagination" slot="pagination"></div>
     </swiper>
   </section>
 </template>
 
 <script>
-import { swiper, swiperSlide } from "vue-awesome-swiper"
+import { swiper, swiperSlide } from "vue-awesome-swiper";
 export default {
-  components: {
-    swiper,
-    swiperSlide
-  },
   props: {
     cname: {
       type: String,
-      default: ''
+      default: ""
     },
     options: {
       type: Object,
-      default () {
+      default() {
         return {
           autoplay: true,
           loop: true,
@@ -34,16 +29,26 @@ export default {
             el: ".swiper-pagination"
           },
           notNextTick: false
-        }
+        };
+      }
+    },
+    items: {
+      type: Array,
+      default() {
+        return [
+          {
+            href: "",
+            src: ""
+          }
+        ];
       }
     }
   },
-  data () {
-    return {
-      
-    }
+  components: {
+    swiper,
+    swiperSlide
   }
-}
+};
 </script>
 
 <style>
