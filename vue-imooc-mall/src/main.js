@@ -12,7 +12,9 @@ import './assets/css/base.css'
 import './assets/css/checkout.css'
 import './assets/css/product.css'
 
+axios.default.baseURL = process.env.NODE_ENV === 'production' ? 'http://127.0.0.1:8080' : 'http://localhost:8080'
 Vue.prototype.$axios = axios
+
 Vue.use(VueLazyload, {
   loading: 'static/loading-svg/loading-bars.svg',
   try: 3 // default 1
