@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="zvue.js"></script>
+    <script>
+      const app = new ZVue({
+        data: {
+          title: 'my name is zhutianhe',
+          user: {
+            name: 'zhutianhe',
+            age: '28'
+          }
+        }
+      })
+
+      app.$data.title = 'I am the title'
+      app.$data.user.name = 'liruifang'
+    </script>
+  </body>
+</html>
