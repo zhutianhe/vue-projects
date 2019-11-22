@@ -1,0 +1,14 @@
+{
+  "folders": [
+    {
+      "path": "../vscode-workspace"
+    },
+    // {
+    //   "path": "../"
+    // },
+    {
+      "path": "../vue-sso-admin"
+    }
+  ],
+  "settings": {}
+}
