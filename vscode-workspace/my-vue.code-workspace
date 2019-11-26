@@ -8,6 +8,9 @@
     // },
     {
       "path": "../vue-sso-admin"
+    },
+    {
+      "path": "../vue-blog-master"
     }
   ],
   "settings": {}
