@@ -7,20 +7,46 @@
     <title>Document</title>
   </head>
   <body>
-    <script src="zvue.js"></script>
+    <div id="app">
+      <!-- 插值绑定 -->
+      <p>{{name}}</p>
+      <!-- 指令解析 -->
+      <p z-text="name"></p>
+      <p>{{age}}</p>
+      <p>
+        {{doubleAge}}
+      </p>
+      <!-- 双向绑定 -->
+      <input type="text" z-model="name" />
+      <!-- 事件处理 -->
+      <button @click="changeName">呵呵</button>
+      <!-- html内容解析 -->
+      <div z-html="html"></div>
+    </div>
+    <script src="./compile.js"></script>
+    <script src="./zvue.js"></script>
+
     <script>
-      const app = new ZVue({
+      const kaikeba = new ZVue({
+        el: "#app",
         data: {
-          title: 'my name is zhutianhe',
-          user: {
-            name: 'zhutianhe',
-            age: '28'
+          name: "I am test.",
+          age: 12,
+          html: "<button>这是一个按钮</button>"
+        },
+        created() {
+          console.log("开始啦");
+          setTimeout(() => {
+            this.name = "我是测试";
+          }, 1500);
+        },
+        methods: {
+          changeName() {
+            this.name = "哈喽，开课吧";
+            this.age = 1;
           }
         }
-      })
-
-      app.$data.title = 'I am the title'
-      app.$data.user.name = 'liruifang'
+      });
     </script>
   </body>
 </html>

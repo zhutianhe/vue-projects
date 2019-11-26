@@ -6,9 +6,14 @@
     // {
     //   "path": "../"
     // },
+    // {
+    //   "path": "../vue-sso-admin"
+    // },
     {
-      "path": "../vue-sso-admin"
+      "path": "../vue-source-code/vue-dev"
     }
   ],
-  "settings": {}
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "vue-source-code"
+  }
 }

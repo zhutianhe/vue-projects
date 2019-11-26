@@ -7,9 +7,17 @@ class ZVue {
     this.$data = options.data
     this.observe(this.$data)
 
-    // 数据模拟
-    new Watcher()
-    this.$data.user.name
+    // // 数据模拟
+    // new Watcher()
+    // this.$data.user.name
+    new Compile(options.el, this)
+
+
+    // 执行created函数
+    if (options.created) {
+      // call(this)是为了在created使用this或vue实例
+      options.created.call(this)
+    }
   }
 
   observe(obj) {
@@ -22,9 +30,12 @@ class ZVue {
     Object.keys(obj).forEach(key => {
       // 进行属性监听
       this.defineReactive(obj, key, obj[key])
+      // 代理data中的属性到vue的实例上
+      this.proxyData(key)
     })
   }
 
+  // 数据响应化
   defineReactive(obj, key, val) {
     // 递归解决数据嵌套
     this.observe(val)
@@ -42,6 +53,18 @@ class ZVue {
         val = newVal
         // console.log(`${key}的属性更新为${val}`)
         dep.notify()
+      }
+    })
+  }
+
+  // 数据代理
+  proxyData(key) {
+    Object.defineProperty(this, key, {
+      get() {
+        return this.$data[key]
+      },
+      set(newVal) {
+        this.$data[key] = newVal
       }
     })
   }
@@ -65,12 +88,20 @@ class Dep {
 }
 
 class Watcher {
-  constructor() {
+  constructor(vm, key, cb) {
+    this.vm = vm
+    this.key = key
+    this.cb = cb
     // 将当前watcher实例指定到Dep静态属性target
     Dep.target = this
+    // 获取属性，出发getter方法，添加依赖
+    this.vm[this.key]
+    Dep.target = null
   }
 
   update() {
     console.log('属性更新了', '属性更新了')
+    // 调用watcher的回调函数 
+    this.cb.call(this.vm, this.vm[this.key])
   }
 }
