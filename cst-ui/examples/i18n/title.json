@@ -1,0 +1,26 @@
+{
+  "zh-CN": {
+    "home": "Element - 网站快速成型工具",
+    "guide": "指南 | CSTUI",
+    "component": "组件 | CSTUI",
+    "resource": "资源 | CSTUI"
+  },
+  "en-US": {
+    "home": "Element - A Desktop UI Toolkit for Web",
+    "guide": "Guide | CSTUI",
+    "component": "Component | CSTUI",
+    "resource": "Resource | CSTUI"
+  },
+  "es": {
+    "home": "Element - Un kit de interfaz de usuario para la web",
+    "guide": "Guía | CSTUI",
+    "component": "Componentes | CSTUI",
+    "resource": "Recursos | CSTUI"
+  },
+  "fr-FR": {
+    "home": "Element - Un kit de composants d'interface pour le web",
+    "guide": "Guide | CSTUI",
+    "component": "Composants | CSTUI",
+    "resource": "Ressources | CSTUI"
+  }
+}

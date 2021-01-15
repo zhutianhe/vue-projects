@@ -1,0 +1,232 @@
+{
+  "zh-CN": [
+    {
+      "name": "更新日志",
+      "path": "/changelog"
+    },
+    {
+      "name": "开发指南",
+      "children": [
+        {
+          "path": "/installation",
+          "name": "安装"
+        },
+        {
+          "path": "/quickstart",
+          "name": "快速上手"
+        },
+        {
+          "path": "/i18n",
+          "name": "国际化"
+        },
+        {
+          "path": "/custom-theme",
+          "name": "自定义主题"
+        },
+        {
+          "path": "/transition",
+          "name": "内置过渡动画"
+        }
+      ]
+    },
+    {
+      "name": "UI组件",
+      "groups": [
+        {
+          "groupName": "Basic",
+          "list": [
+            {
+              "path": "/layout",
+              "title": "Layout 布局"
+            },
+            {
+              "path": "/container",
+              "title": "Container 布局容器"
+            },
+            {
+              "path": "/color",
+              "title": "Color 色彩"
+            },
+            {
+              "path": "/typography",
+              "title": "Typography 字体"
+            },
+            {
+              "path": "/border",
+              "title": "Border 边框"
+            },
+            {
+              "path": "/icon",
+              "title": "Icon 图标"
+            },
+            {
+              "path": "/button",
+              "title": "Button 按钮"
+            },
+            {
+              "path": "/link",
+              "title": "Link 文字链接"
+            }
+          ]
+        },
+        {
+          "groupName": "导航",
+          "list": [
+            {
+              "path": "/page",
+              "title": "Page 分页"
+            },
+            {
+              "path": "/tabs",
+              "title": "Tabs 标签页"
+            },
+            {
+              "path": "/breadcrumb",
+              "title": "Breadcrumb 面包屑"
+            },
+            {
+              "path": "/steps",
+              "title": "Steps 步骤条"
+            },
+            {
+              "path": "/menu",
+              "title": "Menu 侧边导航"
+            },
+            {
+              "path": "/anchor",
+              "title": "Anchor 锚点"
+            },
+            {
+              "path": "/backTop",
+              "title": "BackTop 返回"
+            }
+          ]
+        },
+        {
+          "groupName": "自定义",
+          "list": [
+            {
+              "path": "/calc-input",
+              "title": "CalcInput 输入计算器"
+            },
+            {
+              "path": "/cascader",
+              "title": "Cascader 级联选择器"
+            },
+            {
+              "path": "/excel-table",
+              "title": "ExcelTable Excel表格"
+            },
+            {
+              "path": "/timedown",
+              "title": "Timedown 倒计时"
+            },
+            {
+              "path": "/moving-toolsbar",
+              "title": "MovingToolsbar 移动工具条"
+            },
+            {
+              "path": "/higher-search",
+              "title": "HigherSearch 高级搜索"
+            },
+            {
+              "path": "/range-input",
+              "title": "RangeInput 范围输入框"
+            },
+            {
+              "path": "/select-input",
+              "title": "SelectInput 条件选择输入框"
+            },
+            {
+              "path": "/time-line",
+              "title": "TimeLine 时间轴列表"
+            },
+            {
+              "path": "/tag-checkbox",
+              "title": "TagCheckbox 标签选择器"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "可视化组件",
+      "groups": [
+        {
+          "groupName": "Basic",
+          "list": [
+            {
+              "path": "/layout",
+              "title": "Layout 布局"
+            },
+            {
+              "path": "/container",
+              "title": "Container 布局容器"
+            },
+            {
+              "path": "/color",
+              "title": "Color 色彩"
+            },
+            {
+              "path": "/typography",
+              "title": "Typography 字体"
+            },
+            {
+              "path": "/border",
+              "title": "Border 边框"
+            },
+            {
+              "path": "/icon",
+              "title": "Icon 图标"
+            },
+            {
+              "path": "/button",
+              "title": "Button 按钮"
+            },
+            {
+              "path": "/link",
+              "title": "Link 文字链接"
+            }
+          ]
+        },
+        {
+          "groupName": "自定义",
+          "list": [
+            {
+              "path": "/list-table",
+              "title": "ListTable 列表"
+            },
+            {
+              "path": "/triangle-bar",
+              "title": "TriangleBar 三角柱状图"
+            },
+            {
+              "path": "/square-bar",
+              "title": "SquareBar 方型柱状图"
+            },
+            {
+              "path": "/typography",
+              "title": "Typography 字体"
+            },
+            {
+              "path": "/border",
+              "title": "Border 边框"
+            },
+            {
+              "path": "/icon",
+              "title": "Icon 图标"
+            },
+            {
+              "path": "/button",
+              "title": "Button 按钮"
+            },
+            {
+              "path": "/link",
+              "title": "Link 文字链接"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
