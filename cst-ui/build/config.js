@@ -9,21 +9,21 @@ var nodeExternals = require('webpack-node-externals');
 var externals = {};
 
 // Object.keys(Components).forEach(function(key) {
-//   externals[`element-ui/packages/${key}`] = `element-ui/lib/${key}`;
+//   externals[`cst-ui/packages/${key}`] = `cst-ui/lib/${key}`;
 // });
 
-// externals['cst-ui/src/locale'] = 'element-ui/lib/locale';
+// externals['cst-ui/src/locale'] = 'cst-ui/lib/locale';
 // utilsList.forEach(function(file) {
 //   file = path.basename(file, '.js');
-//   externals[`cst-ui/src/utils/${file}`] = `element-ui/lib/utils/${file}`;
+//   externals[`cst-ui/src/utils/${file}`] = `cst-ui/lib/utils/${file}`;
 // });
 // mixinsList.forEach(function(file) {
 //   file = path.basename(file, '.js');
-//   externals[`cst-ui/src/mixins/${file}`] = `element-ui/lib/mixins/${file}`;
+//   externals[`cst-ui/src/mixins/${file}`] = `cst-ui/lib/mixins/${file}`;
 // });
 // transitionList.forEach(function(file) {
 //   file = path.basename(file, '.js');
-//   externals[`cst-ui/src/transitions/${file}`] = `element-ui/lib/transitions/${file}`;
+//   externals[`cst-ui/src/transitions/${file}`] = `cst-ui/lib/transitions/${file}`;
 // });
 
 externals = [Object.assign({

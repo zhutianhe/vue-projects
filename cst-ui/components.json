@@ -1,1 +1,18 @@
-{}
+{
+  "label": "./packages/label/index.js",
+  "calc-input": "./packages/calc-input/index.js",
+  "cascader": "./packages/cascader/index.js",
+  "excel-table": "./packages/excel-table/index.js",
+  "timedown": "./packages/timedown/index.js",
+  "moving-toolsbar": "./packages/moving-toolsbar/index.js",
+  "higher-search": "./packages/higher-search/index.js",
+  "range-input": "./packages/range-input/index.js",
+  "select-input": "./packages/select-input/index.js",
+  "time-line": "./packages/time-line/index.js",
+  "tag-checkbox": "./packages/tag-checkbox/index.js",
+  "infinite-scroll": "./packages/infinite-scroll/index.js",
+  "loading": "./packages/loading/index.js",
+  "message-box": "./packages/message-box/index.js",
+  "message": "./packages/message/index.js",
+  "notification": "./packages/notification/index.js"
+}

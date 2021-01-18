@@ -3,7 +3,7 @@ import entry from './app';
 import VueRouter from 'vue-router';
 import ElementUI from 'element-ui';
 import ViewUI from 'view-design';
-import CstUI from '../src/index.js';
+import CstUI from 'cst-ui/src/index.js';
 import hljs from 'highlight.js';
 import routes from './route.config';
 import demoBlock from './components/demo-block';
@@ -66,6 +66,13 @@ router.afterEach(route => {
   }
   document.title = 'Element';
   ga('send', 'event', 'PageView', route.name);
+
+  // console.log('-------------------');
+  // console.log(JSON.stringify(ElementUI));
+  // console.log('-------------------');
+  // console.log(JSON.stringify(ViewUI));
+  // console.log('-------------------');
+  // console.log(JSON.stringify(CstUI));
 });
 
 new Vue({ // eslint-disable-line

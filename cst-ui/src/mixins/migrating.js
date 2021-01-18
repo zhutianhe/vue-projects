@@ -3,7 +3,7 @@ import { kebabCase } from 'cst-ui/src/utils/util';
  * Show migrating guide in browser console.
  *
  * Usage:
- * import Migrating from 'element-ui/src/mixins/migrating';
+ * import Migrating from 'cst-ui/src/mixins/migrating';
  *
  * mixins: [Migrating]
  *

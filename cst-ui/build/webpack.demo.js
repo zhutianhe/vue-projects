@@ -174,7 +174,7 @@ if (isProd) {
     cacheGroups: {
       vendor: {
         test: /\/src\//,
-        name: 'element-ui',
+        name: 'cst-ui',
         chunks: 'all'
       }
     }

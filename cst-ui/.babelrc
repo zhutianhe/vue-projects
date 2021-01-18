@@ -29,9 +29,9 @@
       ],
       "plugins": [
         ["module-resolver", {
-          "root": ["element-ui"],
+          "root": ["cst-ui"],
           "alias": {
-            "element-ui/src": "element-ui/lib"
+            "cst-ui/src": "cst-ui/lib"
           }
         }]
       ]
